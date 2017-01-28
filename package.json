@@ -1,21 +1,15 @@
 {
-  "name": "ghost",
-  "version": "0.11.4",
-  "description": "Just a blogging platform.",
-  "author": "Ghost Foundation",
-  "homepage": "http://ghost.org",
-  "keywords": [
-    "ghost",
-    "blog",
-    "cms"
-  ],
+  "name": "spackler",
+  "version": "0.1.0",
+  "description": "The Daily Bunker Blog Application. Powered by Ghost.",
+  "author": "The Daily Bunker",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "git://github.com/TryGhost/Ghost.git"
+    "url": "git://github.com/thedailybunker/spackler.git"
   },
-  "bugs": "https://github.com/TryGhost/Ghost/issues",
-  "contributors": "https://github.com/TryGhost/Ghost/graphs/contributors",
-  "license": "MIT",
+  "contributors": "https://github.com/thedailybunker/spackler/graphs/contributors",
+  "license": "",
   "main": "./core/index",
   "scripts": {
     "preinstall": "node core/server/utils/npm/preinstall.js",
