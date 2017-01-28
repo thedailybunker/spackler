@@ -14,7 +14,7 @@ config = {
         url: 'http://my-ghost-blog.com',
         mail: {},
         database: {
-            client: 'sqlite3',
+            client: 'postgres',
             connection: {
                 filename: path.join(__dirname, '/content/data/ghost.db')
             },
@@ -56,7 +56,7 @@ config = {
         // #### Database
         // Ghost supports sqlite3 (default), MySQL & PostgreSQL
         database: {
-            client: 'sqlite3',
+            client: 'postgres',
             connection: {
                 filename: path.join(__dirname, '/content/data/ghost-dev.db')
             },
