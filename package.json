@@ -1,7 +1,8 @@
 {
   "name": "spackler",
-  "version": "0.1.0",
   "description": "The Daily Bunker Blog Application. Powered by Ghost.",
+  "version": "0.11.4",
+  "private": true,
   "author": "The Daily Bunker",
   "homepage": "",
   "repository": {
