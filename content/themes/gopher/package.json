@@ -1,0 +1,15 @@
+{
+  "name": "gopher",
+  "description": "Custom theme for The Daily Bunker.",
+  "version": "0.1.0",
+  "author": "The Daily Bunker",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thedailybunker/gopher.git"
+  },
+  "contributors": "https://github.com/thedailybunker/gopher/graphs/contributors",
+  "engines": {
+    "ghost": ">=0.9.0 <1.0.0"
+  }
+}
