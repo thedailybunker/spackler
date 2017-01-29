@@ -10,7 +10,7 @@ var sass = require( 'gulp-sass' );
 var config = {
   paths: {
     js: './assets/js',
-    sass: './assets/sass'
+    sass: './assets/sass',
     dist: './assets/dist'
   }
 };
