@@ -13,8 +13,10 @@
   {{ ghost_head }}
 </head>
 <body class="{{ body_class }} nav-closed">
-  {{!-- nav partial --}}
-  {{ navigation }}
+  <header>
+    {{!-- nav partial --}}
+    {{ navigation }}
+  </header>
   <div class="site-wrapper">
     {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
     {{{ body }}}
