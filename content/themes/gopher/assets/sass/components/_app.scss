@@ -1,0 +1,10 @@
+.shell {
+  position: relative;
+  width: 1024px;
+  margin: 0 auto;
+
+  > div {
+    position: relative;
+    z-index: 1;
+  }
+}

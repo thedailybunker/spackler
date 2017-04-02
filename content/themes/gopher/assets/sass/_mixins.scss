@@ -1,0 +1,46 @@
+@mixin transition( $opts ) {
+  -webkit-transition: $opts;
+     -moz-transition: $opts;
+      -ms-transition: $opts;
+       -o-transition: $opts;
+          transition: $opts;
+}
+
+@mixin transform( $opts ) {
+  -webkit-transform: $opts;
+     -moz-transform: $opts;
+      -ms-transform: $opts;
+       -o-transform: $opts;
+          transform: $opts;
+}
+
+@mixin animation( $opts ) {
+  -webkit-animation: $opts;
+     -moz-animation: $opts;
+       -o-animation: $opts;
+          animation: $opts;
+}
+
+@mixin translateX( $x: 0 ) {
+  -webkit-transform: translateX( $x );
+     -moz-transform: translateX( $x );
+      -ms-transform: translateX( $x );
+       -o-transform: translateX( $x );
+          transform: translateX( $x );
+}
+
+@mixin translateY( $y: 0 ) {
+  -webkit-transform: translateY( $y );
+     -moz-transform: translateY( $y );
+      -ms-transform: translateY( $y );
+       -o-transform: translateY( $y );
+          transform: translateY( $y );
+}
+
+@mixin translate3d( $x, $y, $z ) {
+  -webkit-transform: translate3d( $x, $y, $z );
+     -moz-transform: translate3d( $x, $y, $z );
+      -ms-transform: translate3d( $x, $y, $z );
+       -o-transform: translate3d( $x, $y, $z );
+          transform: translate3d( $x, $y, $z );
+}

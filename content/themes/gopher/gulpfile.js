@@ -51,7 +51,7 @@ gulp.task( 'uglify', [ 'browserify' ], function() {
 
 // sass
 gulp.task( 'sass', function() {
-  return gulp.src( config.paths.scss + '/main.scss' )
+  return gulp.src( config.paths.sass + '/main.scss' )
     .pipe( sass().on( 'error', sass.logError ) )
     .pipe( gulp.dest( config.paths.dist + '/css' ) );
 });
