@@ -217,8 +217,15 @@ pre > code {
 }
 
 .copyright {
+  margin-bottom: 16px;
   color: #A1A1A2;
   font-size: 1.3rem;
+}
+
+.site-footer .logo img {
+  display: block;
+  width: 64px;
+  margin: 0 auto;
 }
 
 input[type='email'],
