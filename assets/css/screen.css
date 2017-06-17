@@ -74,7 +74,7 @@ blockquote {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.8;
-  border-left: 2px solid #F13A23;
+  border-left: 2px solid #8ed136;
 }
 
 blockquote *:last-child {
@@ -992,7 +992,7 @@ img {
 }
 
 a {
-  color: #F13A23;
+  color: #8ed136;
   text-decoration: none;
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
@@ -1087,7 +1087,7 @@ mark,
 
 .site-navigation a {
   display: block;
-  color: #F13A23;
+  color: #8ed136;
 }
 
 .site-navigation a:hover {
@@ -1111,7 +1111,7 @@ mark,
 }
 
 .pagination a:hover {
-  color: #F13A23;
+  color: #8ed136;
 }
 
 .pagination .prev {
@@ -1145,14 +1145,14 @@ mark,
           flex: 1 0 100%;
   height: 6rem;
   margin-bottom: 4rem;
-  color: #F13A23;
+  color: #8ed136;
   line-height: 6rem;
   border-top: 1px solid #D9D9D9;
   border-bottom: 1px solid #D9D9D9;
 }
 
 .scroll-top:hover {
-  color: #F13A23;
+  color: #8ed136;
 }
 
 .search-form input[type='search'] {
@@ -1213,7 +1213,7 @@ mark,
 
 .results-date {
   display: block;
-  color: #F13A23;
+  color: #8ed136;
   font-family: "Merriweather Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
@@ -1316,7 +1316,7 @@ mark,
 }
 
 .sl-close:hover {
-  background-color: #F13A23;
+  background-color: #8ed136;
 }
 
 .sl-counter {
@@ -1770,7 +1770,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-  color: #F13A23;
+  color: #8ed136;
 }
 
 @media (min-width: 40rem) {
@@ -1868,7 +1868,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 .tag-cloud a:hover {
-  background-color: #F13A23;
+  background-color: #8ed136;
 }
 
 .site-wrapper {
@@ -2016,7 +2016,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   display: inline-block;
   padding: 0.2rem 1rem;
   color: inherit;
-  background-color: #F13A23;
+  background-color: #8ed136;
   border-radius: 2px;
 }
 
@@ -2050,7 +2050,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 .post-author {
   padding: 0 2rem;
-  color: #F13A23;
+  color: #8ed136;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
@@ -2072,7 +2072,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 .post-more span,
 .post-tags span {
   display: block;
-  color: #F13A23;
+  color: #8ed136;
 }
 
 .post-date a,
@@ -2136,7 +2136,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   margin-left: 1rem;
   padding: 0 1rem;
   color: #FFF;
-  background-color: #F13A23;
+  background-color: #8ed136;
 }
 
 .post-content {
@@ -2255,7 +2255,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 .read-next-story h3 span {
   display: block;
   margin-bottom: 1rem;
-  color: #F13A23;
+  color: #8ed136;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
