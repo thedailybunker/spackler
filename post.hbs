@@ -1,0 +1,47 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+
+<main class="site-main" role="main">
+
+  <article class="{{post_class}}">
+    <header class="post-header">
+      <section class="post-meta">
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}"><span>Date</span> {{date format="DD MMMM YYYY"}}</time>
+
+        <div class="post-tags"><span>Tags</span>{{tags separator=", "}}</div>
+
+        <div class="post-more"><span>Read</span> <div class="eta"></div></div>
+      </section>
+
+      <h2 class="post-title">{{title}}</h2>
+
+      <p class="post-author">
+        {{#author}}
+          By <a href="{{url}}">{{name}}</a>
+        {{/author}}
+        {{#if featured}}
+          <span class="post-featured">Featured</span>
+        {{/if}}
+      </p>
+    </header>
+
+    <section class="site-hero {{#if image}}" style="background-image: url({{image}}){{else}}site-hero-no-cover{{/if}}"></section>
+
+    <section class="post-content">
+      {{content}}
+    </section>
+  </article>
+
+  {{> "widget-share"}}
+
+  {{> "read-next-story"}}
+
+  {{! The tag below includes comments - partials/comments.hbs }}
+  {{> comments}}
+
+</main>
+{{/post}}

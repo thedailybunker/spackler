@@ -1,0 +1,40 @@
+
+// Pagination
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.pagination
+  position: relative
+  width: 100%
+  margin: 6rem 0 8rem
+  color: $color-text-light
+  font-family: "Merriweather Sans", sans-serif
+  font-size: 1.2rem
+  font-weight: 700
+  text-transform: uppercase
+
+  a
+    position: absolute
+    top: 0
+
+    &:hover
+      color:  $color-accent
+
+  .prev
+    left: 0
+
+    &:before
+      content: '\e094'
+      margin-right: 0.4rem
+      font-family: 'icons'
+
+  .next
+    right: 0
+
+    &:after
+      content: '\e095'
+      margin-left: 0.4rem
+      font-family: 'icons'
+
+  .page-number
+    display: block
+    text-align: center

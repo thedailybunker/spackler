@@ -1,0 +1,9 @@
+{{#get "tags" limit="all" include="count.posts" order="count.posts desc"}}
+<section class="widget">
+  <ul class="tag-cloud">
+    {{#foreach tags}}
+      <li><a href="/tag/{{slug}}">{{name}}</a></li>
+    {{/foreach}}
+  </ul>
+</section>
+{{/get}}

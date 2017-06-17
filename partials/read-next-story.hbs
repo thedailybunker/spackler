@@ -1,0 +1,21 @@
+<section class="read-next-story">
+  {{#next_post}}
+    <a class="next {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+      <h3>
+        <span>Next story</span>
+        {{title}}
+      </h3>
+      <span class="overlay"></span>
+    </a>
+  {{/next_post}}
+
+  {{#prev_post}}
+    <a class="prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+      <h3>
+        <span>Previous story</span>
+        {{title}}
+      </h3>
+      <span class="overlay"></span>
+    </a>
+  {{/prev_post}}
+</section>

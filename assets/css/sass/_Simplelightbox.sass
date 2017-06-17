@@ -1,0 +1,112 @@
+.sl-overlay
+  display: none
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1006
+  background: rgba(0,0,0,.92)
+
+.sl-wrapper
+  z-index: 1000
+
+.sl-close,
+.sl-counter
+  display: none
+  position: fixed
+  top: 0
+  z-index: 1020
+  width: 6rem
+  height: 6rem
+  margin: 0
+  padding: 0
+  color: #FFF
+  text-align: center
+  line-height: 6rem
+  background-color: rgba(0,0,0,.4)
+
+  +medium
+    width: 8rem
+    height: 8rem
+    line-height: 8rem
+
+.sl-close
+  right: 0
+  border: 0
+  font-size: 3rem
+  cursor: pointer
+
+  &:hover
+    background-color: $color-accent
+
+.sl-counter
+  left: 0
+
+.sl-navigation
+  width: 100%
+  display: none
+
+  button
+    +medium
+      display: block
+      position: fixed
+      top: 0
+      z-index: 1015
+      width: 8rem
+      height: 100%
+      font-family: Arial, sans-serif
+      font-size: 3rem
+      text-align: center
+      background-color: rgba(0,0,0,.2)
+
+    &.sl-next
+      right: 0
+
+    &.sl-prev
+      left: 0
+
+.sl-image
+  position: fixed
+  z-index: 10000
+  touch-action: none
+
+  img
+    display: block
+    margin: 0
+    padding: 0
+
+  iframe
+    border: 0 none
+    background: $color-primary
+
+.sl-spinner
+  display: none
+  position: fixed
+  top: 50%
+  left: 50%
+  width: 4rem
+  height: 4rem
+  z-index: 1007
+  margin: -2rem 0 0 -2rem
+  border: 5px solid rgba(255,255,255,.8)
+  border-radius: 50%
+  opacity: 0
+  animation: pulsate 1s ease-out infinite
+
+.sl-scrollbar-measure
+  position: absolute
+  top: -9999px
+  width: 5rem
+  height: 5rem
+  overflow: scroll
+
+@keyframes pulsate
+  0%
+    transform: scale(.1)
+    opacity: 0
+  50%
+    opacity: 1
+  100%
+    transform: scale(1.2)
+    opacity: 0
