@@ -51,7 +51,7 @@ html {
 
 body {
   margin: 0;
-  color: #2C2C2D;
+  color: #3c4147;
   font-family: 'Merriweather', serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -146,7 +146,7 @@ input[type='reset'].button-outline:hover,
 input[type='reset'].button-outline:focus,
 input[type='submit'].button-outline:hover,
 input[type='submit'].button-outline:focus {
-  color: #2C2C2D;
+  color: #3c4147;
   background-color: transparent;
   border-color: #BFBFC0;
 }
@@ -170,7 +170,7 @@ input[type='reset'].button-clear:hover,
 input[type='reset'].button-clear:focus,
 input[type='submit'].button-clear:hover,
 input[type='submit'].button-clear:focus {
-  color: #2C2C2D;
+  color: #3c4147;
   background-color: transparent;
   border-color: transparent;
 }
@@ -1007,7 +1007,7 @@ a {
 
 a:hover {
   cursor: pointer;
-  color: #2C2C2D;
+  color: #3c4147;
 }
 
 dl,
@@ -1737,7 +1737,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 2rem 0;
-  color: #2C2C2D;
+  color: #3c4147;
   font-family: 'Merriweather', serif;
   font-weight: 900;
 }
@@ -1773,7 +1773,7 @@ h6 {
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #2C2C2D;
+  color: #3c4147;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
@@ -2085,7 +2085,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 .post-date a,
 .post-more a,
 .post-tags a {
-  color: #2C2C2D;
+  color: #3c4147;
 }
 
 @media screen and (min-width: 480px) {
@@ -2279,6 +2279,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 .read-next-story .no-cover h3 {
-  color: #2C2C2D;
+  color: #3c4147;
 }
 /*# sourceMappingURL=screen.css.map */
