@@ -1,6 +1,24 @@
 ( function( $ ) {
   'use strict';
 
+  var Post = function( post ) {
+    var prop;
+
+    for ( prop in post )
+      this[ prop ] = post[ prop ];
+  };
+
+  Post.prototype = {};
+
+  Post.prototype.getHTML = function() {
+    return $( '<li>' )
+      .append( this._template() );
+  };
+
+  Post.prototype._template = function() {
+    return this.title;
+  };
+
   var featured = {
     init: function() {
       this.$el = $( '.jumbotron .featured' );
@@ -15,6 +33,15 @@
 
     _done: function( data ) {
       console.log( 'data', data );
+      data = data || {};
+      var posts = this.posts = data.posts || [];
+
+      posts
+        .slice( 0, 4 )
+        .forEach( function( post ) {
+          post = new Post( post );
+          this.$el.append( post.getHTML() );
+        }.bind( this ) );
     }
   };
 
