@@ -2321,7 +2321,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   background-position: 50%;
 }
 
-.jumbotron .featured li > div .title span {
+.jumbotron .featured li > div span {
   display: block;
   position: absolute;
   bottom: 0;
