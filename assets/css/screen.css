@@ -2321,15 +2321,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   background-position: 50%;
 }
 
-.jumbotron .featured li > div .title {
+.jumbotron .featured li > div .title span {
+  display: block;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 80%;
-}
-
-.jumbotron .featured li > div .title span {
-  display: inline;
+  color: #fff;
   font-family: 'Merriweather Sans', sans-serif;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.75);
 }
