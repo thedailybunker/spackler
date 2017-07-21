@@ -2314,6 +2314,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 .jumbotron .featured li > div {
+  position: relative;
   height: 100%;
   width: 100%;
   background-size: cover;
