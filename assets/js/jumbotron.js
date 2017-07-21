@@ -16,7 +16,10 @@
   };
 
   Post.prototype._template = function() {
-    return this.title;
+    return ''
+      + '<div style="background-image:' + this.image + '">'
+        + '<span>' + this.title + '</span>'
+      + '</div>';
   };
 
   var featured = {

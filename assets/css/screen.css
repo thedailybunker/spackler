@@ -2282,3 +2282,40 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   color: #3c4147;
 }
 /*# sourceMappingURL=screen.css.map */
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1;
+}
+
+/* jumbotron */
+.jumbotron .featured {
+  height: 128px;
+  list-style: none;
+}
+
+.jumbotron .featured li {
+  height: 100%;
+  width: 23.5%;
+  margin-right: 2%;
+  float: left;
+  list-style: none;
+}
+
+.jumbotron .featured li:last-of-type {
+  margin-right: 0;
+}
+
+.jumbotron .featured li > div {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
