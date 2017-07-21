@@ -16,7 +16,6 @@
   };
 
   Post.prototype._template = function() {
-    console.log( this.image );
     return ''
       + '<div style="background-image:url(' + this.image + ')">'
         + '<span>' + this.title + '</span>'
@@ -41,7 +40,7 @@
       var posts = this.posts = data.posts || [];
 
       posts
-        .slice( 0, 4 )
+        .slice( 0, 3 )
         .forEach( function( post ) {
           post = new Post( post );
           this.$el.append( post.getHTML() );
