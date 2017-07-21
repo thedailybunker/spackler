@@ -18,7 +18,9 @@
   Post.prototype._template = function() {
     return ''
       + '<div style="background-image:url(' + this.image + ')">'
-        + '<span>' + this.title + '</span>'
+        + '<div class="title">'
+          + '<span>' + this.title + '</span>'
+        + '</div>'
       + '</div>';
   };
 
