@@ -16,8 +16,9 @@
   };
 
   Post.prototype._template = function() {
+    console.log( this.image );
     return ''
-      + '<div style="background-image:url("' + this.image + '")">'
+      + '<div style="background-image:url(' + this.image + ')">'
         + '<span>' + this.title + '</span>'
       + '</div>';
   };
