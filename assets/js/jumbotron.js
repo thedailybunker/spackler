@@ -12,7 +12,8 @@
 
   Post.prototype.getHTML = function() {
     return $( '<li>' )
-      .append( this._template() );
+      .append( this._template() )
+      .onClick( this._onClick.bind( this ) );
   };
 
   Post.prototype._template = function() {
@@ -20,6 +21,10 @@
       + '<div style="background-image:url(' + this.image + ')">'
         + '<span>' + this.title + '</span>'
       + '</div>';
+  };
+
+  Post.prototype._onClick = function() {
+    window.location = this.url;
   };
 
   var featured = {
