@@ -19,7 +19,10 @@
   Post.prototype._template = function() {
     return ''
       + '<div style="background-image:url(' + this.image + ')">'
-        + '<span>' + this.title + '</span>'
+        + '<div class="title">'
+          + '<span>featured</span>'
+          + '<h3>' + this.title + '</h3>'
+        + '</div>'
       + '</div>';
   };
 
@@ -45,7 +48,7 @@
       var posts = this.posts = data.posts || [];
 
       posts
-        .slice( 0, 3 )
+        .slice( 0, 2 )
         .forEach( function( post ) {
           post = new Post( post );
           this.$el.append( post.getHTML() );
