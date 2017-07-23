@@ -13,7 +13,7 @@
   Post.prototype.getHTML = function() {
     return $( '<li>' )
       .append( this._template() )
-      .onClick( this._onClick.bind( this ) );
+      .click( this._onClick.bind( this ) );
   };
 
   Post.prototype._template = function() {
