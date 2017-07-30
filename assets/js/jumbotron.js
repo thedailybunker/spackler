@@ -13,7 +13,7 @@
   Post.prototype.getHTML = function() {
     return $( '<li>' )
       .addClass( 'two' )
-      .append( this._template() )
+      .append( this._template2() )
       .click( this._onClick.bind( this ) );
   };
 
