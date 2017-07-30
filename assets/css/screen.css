@@ -2312,14 +2312,15 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 .jumbotron .featured li:last-of-type {
-  margin-right: none;
+  margin-right: 0;
 }
 
 .jumbotron .featured li:hover {
   cursor: pointer;
 }
 
-.jumbotron .featured li.one > div {
+.jumbotron .featured li.one > div,
+.jumbotron .featured li.two > .image {
   position: relative;
   height: 100%;
   width: 100%;
@@ -2373,6 +2374,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 .jumbotron .featured li.two .image {
+  position: relative;
   height: 160px;
 }
 
@@ -2391,6 +2393,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   left: 8px;
   padding: 4px;
   color: white;
-  font-size: 16px;
+  font-size: 12px;
+  text-transform: uppercase;
   background: #8ed136;
+}
+
+.jumbotron .featured li.two .title h3 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
 }
