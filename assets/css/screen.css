@@ -2297,24 +2297,29 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 /* jumbotron */
 .jumbotron .featured {
-  height: 180px;
+  height: 240px;
   margin-bottom: 4rem;
   list-style: none;
 }
 
 .jumbotron .featured li {
   height: 100%;
-  width: 50%;
+  width: 32%;
   float: left;
+  margin-right: 2%;
   list-style: none;
   overflow: hidden;
+}
+
+.jumbotron .featured li:last-of-type {
+  margin-right: none;
 }
 
 .jumbotron .featured li:hover {
   cursor: pointer;
 }
 
-.jumbotron .featured li > div {
+.jumbotron .featured li.one > div {
   position: relative;
   height: 100%;
   width: 100%;
@@ -2322,7 +2327,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   background-position: 50%;
 }
 
-.jumbotron .featured li > div::after {
+.jumbotron .featured li.one > div::after,
+.jumbotron .featured li.two > .image::after {
   content: "";
   display: block;
   position: absolute;
@@ -2331,13 +2337,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   height: 100%;
   width: 100%;
   background-color: #8ed136;
-  background: -moz-linear-gradient(45deg, rgba(60, 65, 71, .8) 1%, rgba(142, 209, 54, .5) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(60, 65, 71, .8) 1%, rgba(142, 209, 54, .5) 100%);
-  background: linear-gradient(45deg, rgba(60, 65, 71, .8) 1%, rgba(142, 209, 54, .5) 100%);
+  background: -moz-linear-gradient(45deg, rgba(60, 65, 71, .8) 1%, rgba(142, 209, 54, .4) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(60, 65, 71, .8) 1%, rgba(142, 209, 54, .4) 100%);
+  background: linear-gradient(45deg, rgba(60, 65, 71, .8) 1%, rgba(142, 209, 54, .4) 100%);
   z-index: 0;
 }
 
-.jumbotron .featured li > div .title {
+.jumbotron .featured li.one > div .title {
   position: relative;
   /*display: block;
   position: absolute;
@@ -2351,7 +2357,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   z-index: 1;
 }
 
-.jumbotron .featured li > div .title span {
+.jumbotron .featured li.one > div .title span {
   display: block;
   margin-bottom: 1rem;
   color: #8ed136;
@@ -2361,7 +2367,30 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   text-transform: uppercase;
 }
 
-.jumbotron .featured li > div .title h3 {
+.jumbotron .featured li.one > div .title h3 {
   color: #FFF;
   font-size: 2.6rem;
+}
+
+.jumbotron .featured li.two .image {
+  height: 160px;
+}
+
+.jumbotron .featured li.two .title {
+  position: relative;
+  padding: 16px 8px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.jumbotron .featured li.two .title span {
+  display: inline-block;
+  position: absolute;
+  top: -24px;
+  left: 8px;
+  padding: 4px;
+  color: white;
+  font-size: 16px;
+  background: #8ed136;
 }

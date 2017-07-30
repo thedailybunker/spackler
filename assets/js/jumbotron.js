@@ -12,6 +12,7 @@
 
   Post.prototype.getHTML = function() {
     return $( '<li>' )
+      .addClass( 'two' )
       .append( this._template() )
       .click( this._onClick.bind( this ) );
   };
@@ -23,6 +24,15 @@
           + '<span>featured</span>'
           + '<h3>' + this.title + '</h3>'
         + '</div>'
+      + '</div>';
+  };
+
+  Post.prototype._template2 = function() {
+    return ''
+      + '<div class="image" style="background-image:url(' + this.image + ')"></div>'
+      + '<div class="title">'
+        + '<span>featured</span>'
+        + '<h3>' + this.title + '</h3>'
       + '</div>';
   };
 
@@ -48,7 +58,7 @@
       var posts = this.posts = data.posts || [];
 
       posts
-        .slice( 0, 2 )
+        .slice( 0, 3 )
         .forEach( function( post ) {
           post = new Post( post );
           this.$el.append( post.getHTML() );
