@@ -11,13 +11,15 @@
   Post.prototype = {};
 
   Post.prototype.getHTML = function() {
+    var template = [ 'one', 'two' ][ Math.floor( Math.random() * 2 ) ];
+
     return $( '<li>' )
-      .addClass( 'two' )
-      .append( this._template2() )
+      .addClass( template )
+      .append( this[ '_template_' + template ]() )
       .click( this._onClick.bind( this ) );
   };
 
-  Post.prototype._template = function() {
+  Post.prototype._template_one = function() {
     return ''
       + '<div style="background-image:url(' + this.image + ')">'
         + '<div class="title">'
@@ -27,7 +29,7 @@
       + '</div>';
   };
 
-  Post.prototype._template2 = function() {
+  Post.prototype._template_two = function() {
     return ''
       + '<div class="image" style="background-image:url(' + this.image + ')"></div>'
       + '<div class="title">'
