@@ -2330,7 +2330,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0,0,0,.7);
+  background-color: #8ed136;
+  background: -moz-linear-gradient(45deg, rgba(50, 40, 60, .9) 1%, rgba(182, 54, 209, .6) 25%, rgba(142, 209, 54, .7) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(50, 40, 60, .9) 1%, rgba(182, 54, 209, .6) 25%, rgba(142, 209, 54, .7) 100%);
+  background: linear-gradient(45deg, rgba(50, 40, 60, .9) 1%, rgba(182, 54, 209, .6) 25%, rgba(142, 209, 54, .7) 100%);
   z-index: 0;
 }
 
