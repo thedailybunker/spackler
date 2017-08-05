@@ -2296,8 +2296,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 /* header */
-.site-header {
-  
+.site-header h1 {
+  margin: 0;
 }
 
 /* jumbotron */
