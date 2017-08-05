@@ -68,10 +68,30 @@
     }
   };
 
+  var ad = {
+    init: function() {
+      this.$el = $( '.jumbotron .ad' );
+
+      this._render();
+    },
+
+    _render: function() {
+      this.$el.append( this._template() );
+    },
+
+    _template: function() {
+      return ''
+        + '<a target="_blank" href="http://shareasale.com/r.cfm?b=962843&amp;u=1337727&amp;m=69731&amp;urllink=&amp;afftrack=">'
+          + '<img src="http://static.shareasale.com/image/69731/affiliatebanner3.gif" border="0" alt="10% Off Sitewide, Use Code: DNA10" />'
+        + '</a>';
+    }
+  };
+
   var app = {
     init: function() {
       console.log( 'jumbotron' );
       featured.init();
+      ad.init();
     }
   };
 

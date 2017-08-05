@@ -343,7 +343,7 @@ input[type='file'] {
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  max-width: 112rem;
+  max-width: 124rem;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -2412,6 +2412,17 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 20px;
   font-weight: 700;
+}
+
+.jumbotron .ad {
+  margin-bottom: 4rem;
+  padding-top: 4rem;
+  border-top: 1px solid #D9D9D9;
+}
+
+.jumbotron .ad a {
+  display: block;
+  margin: 0 auto;
 }
 
 /* sidebar ads */
