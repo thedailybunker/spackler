@@ -2295,6 +2295,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   zoom: 1;
 }
 
+/* header */
+.site-header {
+  
+}
+
 /* jumbotron */
 .jumbotron .featured {
   height: 320px;
@@ -2417,8 +2422,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 .sidebar-ad-one a {
   display: block;
-  height: 300px;
-  width: 250px;
+  height: 250px;
+  width: 300px;
   margin: 0 auto 4rem auto;
   overflow: hidden;
 }
