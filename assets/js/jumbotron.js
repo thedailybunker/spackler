@@ -81,8 +81,8 @@
 
     _template: function() {
       return ''
-        + '<a target="_blank" href="http://shareasale.com/r.cfm?b=962843&amp;u=1337727&amp;m=69731&amp;urllink=&amp;afftrack=">'
-          + '<img src="http://static.shareasale.com/image/69731/affiliatebanner3.gif" border="0" alt="10% Off Sitewide, Use Code: DNA10" />'
+        + '<a target="_blank" href="http://shareasale.com/r.cfm?b=1018843&amp;u=1337727&amp;m=7124&amp;urllink=&amp;afftrack=">'
+          + '<img src="http://static.shareasale.com/image/7124/Golden_Knights_728x90_00.jpg" border="0" alt="Welcome to the NHL Las Vegas Golden Knights! Get your Gear at Fanatics!" />'
         + '</a>';
     }
   };
