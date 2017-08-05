@@ -666,9 +666,9 @@ input[type='file'] {
   }
   .column.medium-column-25 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
-    max-width: 25%;
+        -ms-flex: 0 0 320px;
+            flex: 0 0 320px;
+    /*max-width: 25%;*/
   }
   .column.medium-offset-25 {
     margin-left: 25%;
@@ -986,7 +986,7 @@ input[type='file'] {
   }
   .column {
     margin-bottom: inherit;
-    padding: 0 1rem;
+    padding: 0 10px;
   }
 }
 
@@ -2407,4 +2407,18 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 20px;
   font-weight: 700;
+}
+
+/* sidebar ads */
+.sidebar-ad-one {
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.sidebar-ad-one a {
+  display: block;
+  height: 300px;
+  width: 250px;
+  margin: 0 auto 4rem auto;
+  overflow: hidden;
 }
