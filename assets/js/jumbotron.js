@@ -77,14 +77,18 @@
         { name: 'fan_vegas', weight: .25 },
         { name: 'fan_spinners', weight: .25 }
       ].map( function( ad ) {
-        return Array.apply( ad, Array( Math.floor( ad.weight ) ) );
+        return Array
+          .apply( null, Array( Math.floor( ad.weight * 100 ) ) )
+          .map( function() {
+            return ad;
+          });
       });
       this.ad = []
         .concat
         .apply( [], this.ads )
-          [ Math.floor( Math.random() * this.ads.length ) ];
 
-      console.log( this.ads, this.ad );
+
+      console.log( this.ads, this.ad, this.ad[ Math.floor( Math.random() * this.ads.length ) ] );
       this._render( this.ad );
     },
 
