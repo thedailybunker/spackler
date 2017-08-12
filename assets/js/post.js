@@ -4,7 +4,7 @@
   var ad = {
     init: function() {
       this.$el = $( '.post-ad .ad' );
-      if ( this.$el.width() >= 728 ) return false;
+      if ( this.$el.width() < 728 ) return false;
       this.ads = [
         { name: 'nfl_sideline', weight: .25 },
         { name: 'nfl_draft', weight: .25 },
