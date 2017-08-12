@@ -20,7 +20,8 @@
         .concat
         .apply( [], this.ads )[ Math.floor( Math.random() * 100 ) ];
 
-      this._render( this.ad );
+      if ( this.$el.width() >= 728 )
+        this._render( this.ad );
     },
 
     _render: function( ad ) {
