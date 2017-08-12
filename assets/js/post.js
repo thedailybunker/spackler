@@ -4,7 +4,7 @@
   var ad = {
     init: function() {
       this.$el = $( '.post-ad .ad' );
-      if ( this.$el.width() < 728 ) return false;
+      if ( this.$el.width() < 728 ) return this.$el.hide();
       this.ads = [
         { name: 'nfl_sideline', weight: .25 },
         { name: 'nfl_draft', weight: .25 },
@@ -25,9 +25,7 @@
     },
 
     _render: function( ad ) {
-      this.$el
-        .append( this[ '_' + ad.name ] )
-        .show();
+      this.$el.append( this[ '_' + ad.name ] );
     },
 
     _nfl_sideline: function() {
