@@ -85,10 +85,9 @@
       });
       this.ad = []
         .concat
-        .apply( [], this.ads )
+        .apply( [], this.ads )[ Math.floor( Math.random() * this.ads.length ) ];
 
-
-      console.log( this.ads, this.ad, this.ad[ Math.floor( Math.random() * this.ads.length ) ] );
+      console.log( this.ads, this.ad );
       this._render( this.ad );
     },
 
