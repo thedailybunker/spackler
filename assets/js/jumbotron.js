@@ -71,6 +71,7 @@
   var ad = {
     init: function() {
       this.$el = $( '.jumbotron .ad' );
+      if ( this.$el.width() < 728 ) return this.$el.hide();
       this.ads = [
         { name: 'nfl_sideline', weight: .25 },
         { name: 'nfl_draft', weight: .25 },
@@ -87,8 +88,7 @@
         .concat
         .apply( [], this.ads )[ Math.floor( Math.random() * 100 ) ];
 
-      if ( this.$el.width() >= 728 )
-        this._render( this.ad );
+      this._render( this.ad );
     },
 
     _render: function( ad ) {
