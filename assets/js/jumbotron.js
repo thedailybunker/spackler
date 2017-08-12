@@ -89,7 +89,7 @@
     },
 
     _render: function( ad ) {
-      this.$el.append( this.[ '_' + ad.name ] );
+      this.$el.append( this[ '_' + ad.name ] );
     },
 
     _nfl_sideline: function() {
