@@ -83,12 +83,12 @@
             return ad;
           });
       });
-      this.ad = []
+      this.ad = window.ad = []
         .concat
-        .apply( [], this.ads )[ Math.floor( Math.random() * this.ads.length ) ];
+        .apply( [], this.ads );
 
       console.log( this.ads, this.ad );
-      this._render( this.ad );
+      // this._render( this.ad );
     },
 
     _render: function( ad ) {
