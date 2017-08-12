@@ -2427,6 +2427,20 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   margin: 0 auto;
 }
 
+/* post-ad */
+.post-ad .ad {
+  margin-bottom: 4rem;
+  /*padding-top: 4rem;*/
+  /*border-top: 1px solid #D9D9D9;*/
+}
+
+.post-ad .ad a {
+  display: block;
+  height: 90px;
+  width: 728px;
+  margin: 0 auto;
+}
+
 /* sidebar ads */
 .sidebar-ad-one {
   margin-bottom: 4rem;
